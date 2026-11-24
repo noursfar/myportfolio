@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nour SFAR — Applied AI Engineer · 3D Portfolio</title>
+  <meta name="description" content="Interactive 3D portfolio of Nour SFAR, Applied AI Engineer: education, career and Azure AI expertise." />
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="labels"></div>
+
+  <header id="brand">
+    <span class="mono">NS</span>
+    <span class="brand-text"><b>Nour SFAR</b><small>Applied AI Engineer</small></span>
+  </header>
+
+  <a id="contactBtn" href="#slide-9">Contact</a>
+
+  <aside id="panel" aria-live="polite"></aside>
+
+  <div id="card" role="dialog" aria-modal="false" hidden>
+    <button class="close" aria-label="Close">×</button>
+    <div class="card-body"></div>
+  </div>
+
+  <nav id="nav">
+    <button id="prev" aria-label="Previous chapter">‹</button>
+    <ol id="dots"></ol>
+    <button id="next" aria-label="Next chapter">›</button>
+    <button id="tour" aria-label="Play guided tour"><span class="ic">▶</span><span class="tx">Tour</span></button>
+    <button id="mode2d" title="2D mode (V)" aria-label="Switch 2D mode">2D</button>
+  </nav>
+
+  <div id="hint"></div>
+  <div id="help" hidden>
+    <h3>Navigation</h3>
+    <p><kbd>←</kbd><kbd>→</kbd> or <kbd>Space</kbd> chapters · <kbd>Home</kbd>/<kbd>End</kbd> first/last</p>
+    <p><kbd>T</kbd> guided tour · <kbd>V</kbd> 2D mode · <kbd>F</kbd> full screen · <kbd>H</kbd> this help</p>
+    <p>Drag to look around. Click the labels in the scene for details.</p>
+  </div>
+  <div id="toast"></div>
+  <div id="loader"><span class="mono">NS</span><i></i></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
